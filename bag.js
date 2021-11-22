@@ -1,16 +1,11 @@
-class Bag{
-    constructor(weight){
-        this.weight = weight
-        this.validWeight = function () {
-            if(this.weight >= 25){
-            return false
-            } else{
-                return true
-            }
-     }
-     
-        
-    }
+class Bag {
+	constructor(weight) {
+		if(!weight) {
+			throw new Error('bag must have a weight')
+		}
+		
+		this.weight = weight
+	}
 }
 
 module.exports = Bag

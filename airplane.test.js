@@ -1,17 +1,13 @@
 const airPlane = require("./airPlane")
+//const Airport = require("./airPort")
 
 describe('airPlane number of passengers', ()=> {
     test('needs a name', () => {
-        const testairPlane = new airPlane("americanAirline")
-        expect(testairPlane.name).toBe("americanAirline")
+        const testairPlane = new airPlane("AA001")
+        expect(testairPlane.model).toBe("AA001")
     })
     
-        test('class passengers', () => {
-            const testairPlane = new airPlane([])
-            expect(testairPlane.passenger).toStrictEqual([])
-
-})
-test('fligh number', () => {
+test('flight number', () => {
     const testairPlane = new airPlane(null, null, 2500)
     expect(testairPlane.flightNumber).toBe(2500)
 })

@@ -1,13 +1,10 @@
+const { expect } = require('@jest/globals')
+const Bag = require('./bag')
 
-const Bag = require("./bag")
-
-describe('Bag class', ()=> {
-    test('bag needs a weight', () => {
+describe('Bag', () => {
+    test('bags have weight', () =>{
         const testBag = new Bag(25)
         expect(testBag.weight).toBe(25)
     })
-    test('bag needs a weight', () => {
-        const testBag = new Bag(3)
-        expect(testBag.validWeight()).toBe(true)
-    })
+
 })

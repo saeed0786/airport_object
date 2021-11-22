@@ -1,14 +1,13 @@
-class airPlane{
-    constructor(name, passenger, flightNumber){
-        this.name = name,
-        this.passenger = [],
-       this.flightNumber = flightNumber
-        }
-        passengerBoarded(passenger) {
-            this.passenger.push(passenger)
-        }
-
- 
+class Airplane {
+    
+    constructor(model,number, flightNumber){
+        this.model = model
+        this.number = number
+        this.flightNumber = flightNumber
+    }
 }
 
-module.exports = airPlane
+ 
+
+
+module.exports = Airplane
